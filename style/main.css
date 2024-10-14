@@ -1,0 +1,106 @@
+:root {
+    /* Primary Colors */
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+    /* Neutral Colors */
+    --color-very-dark-blue: hsl(234, 12%, 34%);
+    --color-grayish-blue: hsl(229, 6%, 66%);
+    --color-very-light-gray: hsl(0, 0%, 98%);
+}
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: var(--color-very-light-gray);
+    color: var(--color-very-dark-blue);
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* End Global Rules */
+/* Start Text */
+.container .text {
+    text-align: center;
+}
+.container .text h1:first-child {
+    font-weight: 300;
+}
+.container .text p {
+    text-align: center;
+    font-size: 20px;
+}
+/* End Text */
+/* Start Cards */
+.container .cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+.container .cards .card_one,
+.container .cards .column-cards .card_two,
+.container .cards .column-cards .card_three,
+.container .cards .card_four {
+    position: relative;
+    width: 375px;
+    height: 275px;
+    padding: 40px;
+    border-top: 5px solid;
+    border-radius: 8px;
+    box-shadow: 0px 6px 40px var(--color-grayish-blue);
+    background-color: white;
+}
+.container .cards .card_one {
+    border-color: var(--color-cyan);
+}
+.container .cards .column-cards .card_two {
+    border-color: var(--color-red);
+}
+.container .cards .column-cards .card_three {
+    border-color: var(--color-orange);
+}
+.container .cards .card_four {
+    border-color: var(--color-blue)
+}
+.container .cards .card_one,
+.container .cards .card_four {
+    margin-top: 150px;
+}
+.container .cards .column-cards .card_two,
+.container .cards .column-cards .card_three {
+    margin-bottom: 30px;
+}
+.container .cards .card_one h2,
+.container .cards .column-cards .card_two h2,
+.container .cards .column-cards .card_three h2,
+.container .cards .card_four h2 {
+    width: 232px;
+}
+.container .cards .card_one p,
+.container .cards .column-cards .card_two p,
+.container .cards .column-cards .card_three p,
+.container .cards .card_four p {
+    width: 250px;
+}
+.container .cards .card_one object,
+.container .cards .column-cards .card_two object,
+.container .cards .column-cards .card_three object,
+.container .cards .card_four object {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+/* End Cards */
